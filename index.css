@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Latha;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100%;
+    background-color: rgba(252, 115, 115, 0.5);
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.sidebar.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: auto 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.sidebar ul li {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+.sidebar ul li a::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.sidebar ul li a:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h1, .content h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(216, 82, 82);
+}
+
+.rating {
+    color: gold;
+    margin-left: 5px;
+}
+
+.menu-button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+.menu-button:hover {
+    background-color: #c82333;
+}
+

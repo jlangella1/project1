@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Langella's Pizza & Pasta</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html" data-tooltip="Home"><img src="home.png" alt="Home Icon"></a></li>
+            <li><a href="menu.html" data-tooltip="Menu"><img src="menu.png" alt="Menu Icon"></a></li>
+            <li><a href="booking.html" data-tooltip="Booking"><img src="booking.png" alt="Booking Icon"></a></li>
+            <li><a href="online.html" data-tooltip="Online Order"><img src="online-order.png" alt="Online Order Icon"></a></li>
+            <li><a href="contact.html" data-tooltip="Contact"><img src="contact.png" alt="Contact Icon"></a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2> Menu</h2>
+        <div class="menu-category">
+            <h3>Pizzas</h3>
+            <ul>
+                <li>
+                    <span class="menu-item">Pizza Margherita:</span>
+                    <span class="menu-description">Classic pizza with tomato sauce, mozzarella, and basil.</span>
+                    <span class="menu-price">€8.99</span>
+                </li>
+                <li>
+                    <span class="menu-item">Pizza Diavola:</span>
+                    <span class="menu-description">Spicy pizza with tomato sauce, mozzarella, salami, and chili peppers.</span>
+                    <span class="menu-price">€9.99</span>
+                </li>
+                <li>
+                    <span class="menu-item">Pizza Funghi:</span>
+                    <span class="menu-description">Pizza with tomato sauce, mozzarella, mushrooms, and oregano.</span>
+                    <span class="menu-price">€10.99</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <h3>Pastas</h3>
+            <ul>
+                <li>
+                    <span class="menu-item">Spaghetti Carbonara:</span>
+                    <span class="menu-description">Classic pasta dish with egg, pancetta, Parmesan cheese, and black pepper.</span>
+                    <span class="menu-price">€12.99</span>
+                </li>
+                <li>
+                    <span class="menu-item">Lasagna Bolognese:</span>
+                    <span class="menu-description">Layers of pasta, Bolognese sauce, and cheese baked to perfection.</span>
+                    <span class="menu-price">€11.99</span>
+                </li>
+                <li>
+                    <span class="menu-item">Penne Arrabiata:</span>
+                    <span class="menu-description">Pasta with spicy tomato sauce, garlic, and chili flakes.</span>
+                    <span class="menu-price">€9.99</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <h3>Desserts</h3>
+            <ul>
+                <li>
+                    <span class="menu-item">Tiramisu:</span>
+                    <span class="menu-description">Classic Italian dessert made with layers of ladyfingers, coffee, and mascarpone cream.</span>
+                    <span class="menu-price">€6.99</span>
+                </li>
+                <li>
+                    <span class="menu-item">Panna Cotta:</span>
+                    <span class="menu-description">Creamy Italian dessert made with sweetened cream and gelatin, topped with fruit sauce.</span>
+                    <span class="menu-price">€5.99</span>
+                </li>
+                <li>
+                    <span class="menu-item">Cannoli:</span>
+                    <span class="menu-description">Crispy pastry shells filled with sweet ricotta cheese and chocolate chips.</span>
+                    <span class="menu-price">€4.99</span>
+                </li>
+            </ul>
+        </div>
+        <div class="comment-section">
+            <h3>What would you like to see added?</h3>
+            <form id="comment-form">
+                <textarea id="comment" placeholder="Enter your comment"></textarea>
+                <button id="submit-button" type="submit">Submit</button>
+            </form>
+            <p id="feedback-message"></p>
+        </div>
+    </div>
+    <script src="menu.js"></script>
+</body>
+</html>
